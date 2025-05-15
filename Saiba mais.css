@@ -1,0 +1,315 @@
+body {
+    padding: 0;
+    top: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid red;
+    width: 300px;
+    text-align: center;
+    height: 30px;
+}
+button:hover {
+    transition: 0.5s;
+    transform: scale(1.25);
+}
+#botao {
+    margin: 20px auto;
+}
+img {
+    width: 600px;
+    border-radius: 15px;
+    padding: 3px;
+}
+div {
+    padding: 1px;
+    text-align: center;
+}
+p {
+    margin: 0 auto;
+    width: 850px;
+    text-align: justify;
+    border-radius: 7px;
+    padding: 4px;
+}
+@keyframes Invertido {
+    0% {
+        margin-top: 700px;
+        rotate: 180deg;
+    }
+    50% {
+        margin-left: 0 auto;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+@keyframes Aparicao {
+    from {
+        margin-left: -2500px;
+    }
+    to {
+        margin-left: 0 auto;
+    }
+}
+@keyframes AparicaoCima {
+    from {
+        margin-top: 800px;
+    }
+    to {
+        margin-top: 1px;
+    }
+}
+@keyframes PequenoGrandetxt {
+    from {
+        width: 100px;
+        padding: 1px;
+        margin: 0 auto;
+    }
+    to {
+        width: 850px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+@keyframes PequenoGrandeimg {
+    from {
+        width: 100px;
+        padding: 1px;
+    }
+    to {
+        width: 600px;
+        padding: 3px;
+    }
+}
+
+/*Stranger Things*/
+@keyframes txtStranger {
+    0% {
+        color: red;
+    }
+    50% {
+        color: rgba(255, 0, 0, 0.399);
+    }
+    100% {
+        color: red;
+    }
+}
+#div1 {
+    animation: Invertido 4s;
+    background-color: black;
+    color: red;
+}
+#txtStranger {
+    animation: txtStranger 5s infinite;
+}
+#Stranger {
+    animation: txt4Stranger 10s infinite;
+}
+
+/*Round 6*/
+@keyframes txtRound {
+    0% {
+        color: rgb(36, 216, 150);
+    }
+    50% {
+        color: rgb(254, 46, 81);
+    }
+    100% {
+        color: rgb(36, 216, 150);
+    }
+}
+#div2 {
+    animation: Aparicao 1.5s;
+}
+#tituloRound {
+    animation: txtRound 10s infinite;
+}
+#txtRound {
+    animation: txtRound 5s infinite;
+    background-color: rgb(0, 0, 0);
+}
+
+/*Sob as Águas do Sena*/
+#div3 {
+    animation: AparicaoCima 3s;
+}
+#txtAgua {
+    animation: PequenoGrandetxt 3s;
+}
+#tituloAgua {
+    animation: PequenoGrandetxt 3s;
+}
+#tubarao {
+    animation: PequenoGrandeimg 3s;
+}
+
+/*Donzela*/
+@keyframes txtDonzela {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    35% {
+        color: rgb(255, 115, 0);
+    }
+    75% {
+        color: rgb(255, 64, 0);
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+#div4 {
+    animation: Aparicao 1.5s;
+}
+#tituloDonzela {
+    animation: txtDonzela 10s infinite;
+}
+#txtDonzela {
+    animation: txtDonzela 5s infinite;
+}
+
+/*Wandinha*/
+@keyframes txtWandinha {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    35% {
+        color: rgb(148, 44, 213);
+    }
+    75% {
+        color: rgb(199, 110, 255);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+#div5 {
+    animation: Invertido 4s;
+}
+#tituloWandinha {
+    animation: txtWandinha 10s infinite;
+}
+#txtWandinha {
+    animation: txtWandinha 5s infinite;
+}
+
+/*Adolescência*/
+#div6 {
+    animation: Aparicao 4s;
+}
+#tituloAdolescencia {
+    animation: PequenoGrandetxt 4s;
+}
+#txtAdolescencia {
+    animation: PequenoGrandetxt 4s;
+}
+#adolescente {
+    animation: PequenoGrandeimg 4s;
+}
+
+/*Godzilla Minus One*/
+@keyframes txtGodzilla {
+    0% {
+        color: rgb(65, 65, 65);
+    }
+    25% {
+        color: rgb(0, 69, 148);
+    }
+    40% {
+        color: rgb(0, 119, 255);
+    }
+    65% {
+        color: rgb(0, 166, 255);
+    }
+    85% {
+        color: rgb(200, 226, 255);
+    }
+    100% {
+        color: rgb(65, 65, 65);
+    }
+}
+#div7 {
+    animation: AparicaoCima 4s;
+}
+#tituloGodzilla {
+    animation: PequenoGrandetxt 4s;
+    animation: txtGodzilla 15s infinite;
+}
+#txtGodzilla {
+    animation: PequenoGrandetxt 4s;
+    animation: txtGodzilla 8s infinite;
+}
+#Godzilla {
+    animation: PequenoGrandeimg 4s;
+}
+
+/*Círculo de Fogo*/
+@keyframes txtCirculo {
+    0% {
+        color: rgb(149, 185, 207);
+    }
+    50% {
+        color: rgb(44, 73, 92);
+    }
+    100% {
+        color: rgb(149, 185, 207);
+    }
+}
+#div8 {
+    animation: Aparicao 4s;
+}
+#tituloCirculo {
+    animation: txtCirculo 10s infinite;
+}
+#txtCirculo {
+    animation: txtCirculo 5s infinite;
+}
+
+/*Um Lugar Silencioso*/
+@keyframes txtLugar {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    50% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+#div9 {
+    animation: Invertido 4s;
+}
+#tituloLugar {
+    animation: txtLugar 10s infinite;
+}
+#txtLugar {
+    animation: txtLugar 5s infinite;
+}
+
+/*Alerta Vermelho*/
+@keyframes txtAlerta {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    50% {
+        color: rgb(255, 0, 0);
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+#div10 {
+    animation: AparicaoCima 4s;
+}
+#tituloAlerta {
+    animation: txtAlerta 10s infinite;
+}
+#txtAlerta {
+    animation: txtAlerta 5s infinite;
+}
