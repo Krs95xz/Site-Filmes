@@ -5,22 +5,52 @@ body {
     padding: 0;
     top: 0;
     font-family: Montserrat;
-    animation: Transicao 2.5s;
+    animation: titulo 2.5s;
 }
 html, body {
     height: 100%;
 }
+header {
+    display: grid;
+    border: 3px solid rgb(141, 203, 206);
+    grid-template-columns: 1fr 10fr 4fr;
+}
+#logo {
+    width: 100px;
+}
+h1 {
+    color: white;
+    padding-top: 9px;
+    margin-right: 100%;
+}
 footer {
     width: 99.7%;
 }
-header, footer {
-    text-align: center;
-    border: 3px solid rgb(255, 24, 24);
+aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 section {
-    display: flex;
-    flex: 1;
-    padding: 20px;
+    padding: 50px;
+}
+footer {
+    width: 98.3%;
+    text-align: center;
+    top: 100%;
+    bottom: 0;
+    border: 3px solid rgb(141, 203, 206);
+    padding: 10px;
+}
+header > aside > a {
+    margin-top: 20px;
+    font-size: 13px;
+    height: 60%;
+    border-radius: 20px;
+}
+header > aside > a:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(141, 203, 206);
+    transition: 1s;
 }
 code {
     background-color: #eef;
@@ -35,33 +65,29 @@ ol {
     padding-left: 20px;
 }
 main {
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(245, 245, 245, 0.881);
-    flex: 6;
-}
-aside {
-    background-color: rgb(238, 69, 69);
-    flex: 1;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(245, 245, 245, 0.881);
-}
-main, aside {
     color: black;
-}
-div {
-    background-color: rgb(0, 0, 0);
-    width: 205px;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(245, 245, 245, 0.881);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 a {
     color: white;
+    text-decoration: none;
+    text-align: center;
 }
 #b1:hover {
-    background-color: rgb(60, 60, 249);
-    transform: scale(1.25);
-    width: 220px;
-    margin-left: -44px;
-    transition: 1s;
+    background-color: rgb(95, 95, 255);
+    transition: 0.5s;
     border: 1px solid black;
+}
+@keyframes titulo {
+    from {
+        margin-top: -100px;
+    }
+    to {
+        margin-top: 0 auto;
+    }
 }

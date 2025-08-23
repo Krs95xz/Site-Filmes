@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    animation: titulo 2s;
+    font-family: Montserrat;
+}
+header {
+    display: grid;
+    border: 3px solid rgb(141, 203, 206);
+    grid-template-columns: 1fr 10fr 4fr;
+}
+aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+header > aside > a {
+    margin-top: 20px;
+    font-size: 13px;
+    height: 60%;
+    border-radius: 20px;
+}
+header > aside > a:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(141, 203, 206);
+    transition: 1s;
+}
+footer {
+    width: 98.3%;
+    text-align: center;
+    top: 100%;
+    bottom: 0;
+    border: 3px solid rgb(141, 203, 206);
+    padding: 10px;
+}
+#logo {
+    width: 100px;
+}
+h1 {
+    color: white;
+    padding-top: 9px;
+}
+#planos > .caixas > h2, h4 {
+    text-align: center;
+}
+#planos > .caixas > h2, li, h4 {
+    color: black;
+}
+/*Premium*/
+#prP1 {
+    color: rgb(29, 0, 147);
+}
+#prP2 {
+    color: rgb(41, 2, 197);
+}
+#prP3 {
+    color: rgb(1, 93, 253);
+}
+#prP4 {
+    color: rgb(1, 135, 253);
+}
+/*Avançado*/
+#prA1 {
+    color: rgb(0, 0, 0);
+}
+#prA2 {
+    color: rgb(106, 106, 106);
+}
+#prA3 {
+    color: rgb(0, 0, 0);
+}
+#prA4 {
+    color: rgb(87, 87, 87);
+}
+#planos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    height: 350px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.caixas {
+    background-color: rgb(141, 203, 206);
+    border-radius: 30px;
+    animation: desaparecer 4s;
+}
+.caixas:nth-child(1) {
+    animation-fill-mode: both;
+    background: linear-gradient(rgb(141, 203, 206), rgb(84, 119, 121));
+}
+.caixas:nth-child(2) {
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    transform: scale(1.2);
+    background: linear-gradient(rgb(141, 203, 206), rgb(47, 169, 255));
+}
+.caixas:nth-child(3) {
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    background: linear-gradient(rgb(141, 203, 206), rgb(255, 255, 255));
+}
+@keyframes titulo {
+    from {
+        margin-top: -100px;
+    }
+    to {
+        margin-top: 0 auto;
+    }
+}
+@keyframes desaparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

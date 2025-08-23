@@ -9,19 +9,22 @@ button {
     color: white;
     border-radius: 10px;
     border: 2px solid red;
-    width: 300px;
+    width: 200px;
     text-align: center;
     height: 30px;
 }
 button:hover {
     transition: 0.5s;
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 #botao {
-    margin: 20px auto;
+    left: 0.1%;
+    margin: 0.5%;
+    margin-left: 1.5%;
+    position: absolute;
 }
 img {
-    width: 600px;
+    width: 50%;
     border-radius: 15px;
     padding: 3px;
 }
@@ -31,7 +34,7 @@ div {
 }
 p {
     margin: 0 auto;
-    width: 850px;
+    width: 50%;
     text-align: justify;
     border-radius: 7px;
     padding: 4px;
@@ -66,23 +69,23 @@ p {
 }
 @keyframes PequenoGrandetxt {
     from {
-        width: 100px;
+        width: 10%;
         padding: 1px;
         margin: 0 auto;
     }
     to {
-        width: 850px;
+        width: 50%;
         padding: 20px;
         margin: 0 auto;
     }
 }
 @keyframes PequenoGrandeimg {
     from {
-        width: 100px;
+        width: 10%;
         padding: 1px;
     }
     to {
-        width: 600px;
+        width: 50%;
         padding: 3px;
     }
 }
@@ -93,22 +96,20 @@ p {
         color: red;
     }
     50% {
-        color: rgba(255, 0, 0, 0.399);
+        color: rgba(238, 0, 0, 0.607);
     }
     100% {
         color: red;
     }
 }
 #div1 {
-    animation: Invertido 4s;
-    background-color: black;
-    color: red;
+    animation: Invertido 2s;
 }
 #txtStranger {
     animation: txtStranger 5s infinite;
 }
 #Stranger {
-    animation: txt4Stranger 10s infinite;
+    animation: txtStranger 10s infinite;
 }
 
 /*Round 6*/
@@ -124,7 +125,7 @@ p {
     }
 }
 #div2 {
-    animation: Aparicao 1.5s;
+    animation: Aparicao 2s;
 }
 #tituloRound {
     animation: txtRound 10s infinite;
@@ -136,22 +137,22 @@ p {
 
 /*Sob as Águas do Sena*/
 #div3 {
-    animation: AparicaoCima 3s;
+    animation: AparicaoCima 2s;
 }
 #txtAgua {
-    animation: PequenoGrandetxt 3s;
+    animation: PequenoGrandetxt 2s;
 }
 #tituloAgua {
-    animation: PequenoGrandetxt 3s;
+    animation: PequenoGrandetxt 2s;
 }
 #tubarao {
-    animation: PequenoGrandeimg 3s;
+    animation: PequenoGrandeimg 2s;
 }
 
 /*Donzela*/
 @keyframes txtDonzela {
     0% {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     35% {
         color: rgb(255, 115, 0);
@@ -160,11 +161,11 @@ p {
         color: rgb(255, 64, 0);
     }
     100% {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 }
 #div4 {
-    animation: Aparicao 1.5s;
+    animation: Aparicao 2s;
 }
 #tituloDonzela {
     animation: txtDonzela 10s infinite;
@@ -189,7 +190,7 @@ p {
     }
 }
 #div5 {
-    animation: Invertido 4s;
+    animation: Invertido 2s;
 }
 #tituloWandinha {
     animation: txtWandinha 10s infinite;
@@ -200,52 +201,49 @@ p {
 
 /*Adolescência*/
 #div6 {
-    animation: Aparicao 4s;
+    animation: Aparicao 2s;
 }
 #tituloAdolescencia {
-    animation: PequenoGrandetxt 4s;
+    animation: PequenoGrandetxt 2s;
 }
 #txtAdolescencia {
-    animation: PequenoGrandetxt 4s;
+    animation: PequenoGrandetxt 2s;
 }
 #adolescente {
-    animation: PequenoGrandeimg 4s;
+    animation: PequenoGrandeimg 2s;
 }
 
 /*Godzilla Minus One*/
 @keyframes txtGodzilla {
     0% {
-        color: rgb(65, 65, 65);
-    }
-    25% {
         color: rgb(0, 69, 148);
     }
-    40% {
+    35% {
         color: rgb(0, 119, 255);
     }
-    65% {
+    60% {
         color: rgb(0, 166, 255);
     }
-    85% {
+    80% {
         color: rgb(200, 226, 255);
     }
     100% {
-        color: rgb(65, 65, 65);
+        color: rgb(0, 69, 148);
     }
 }
 #div7 {
-    animation: AparicaoCima 4s;
+    animation: AparicaoCima 2s;
 }
 #tituloGodzilla {
-    animation: PequenoGrandetxt 4s;
+    animation: PequenoGrandetxt 2s;
     animation: txtGodzilla 15s infinite;
 }
 #txtGodzilla {
-    animation: PequenoGrandetxt 4s;
+    animation: PequenoGrandetxt 2s;
     animation: txtGodzilla 8s infinite;
 }
 #Godzilla {
-    animation: PequenoGrandeimg 4s;
+    animation: PequenoGrandeimg 2s;
 }
 
 /*Círculo de Fogo*/
@@ -261,7 +259,7 @@ p {
     }
 }
 #div8 {
-    animation: Aparicao 4s;
+    animation: Aparicao 2s;
 }
 #tituloCirculo {
     animation: txtCirculo 10s infinite;
@@ -273,17 +271,17 @@ p {
 /*Um Lugar Silencioso*/
 @keyframes txtLugar {
     0% {
-        color: rgb(0, 0, 0);
+        color: rgba(255, 208, 0, 0.725);
     }
     50% {
         color: rgb(255, 255, 255);
     }
     100% {
-        color: rgb(0, 0, 0);
+        color: rgba(255, 208, 0, 0.725);
     }
 }
 #div9 {
-    animation: Invertido 4s;
+    animation: Invertido 2s;
 }
 #tituloLugar {
     animation: txtLugar 10s infinite;
@@ -292,24 +290,24 @@ p {
     animation: txtLugar 5s infinite;
 }
 
-/*Alerta Vermelho*/
-@keyframes txtAlerta {
+/*Jurassic World*/
+@keyframes txtJurassic {
     0% {
         color: rgb(0, 0, 0);
     }
     50% {
-        color: rgb(255, 0, 0);
+        color: rgb(34, 119, 255);
     }
     100% {
         color: rgb(0, 0, 0);
     }
 }
 #div10 {
-    animation: AparicaoCima 4s;
+    animation: AparicaoCima 2s;
 }
-#tituloAlerta {
-    animation: txtAlerta 10s infinite;
+#tituloJurassic {
+    animation: txtJurassic 10s infinite;
 }
-#txtAlerta {
-    animation: txtAlerta 5s infinite;
+#txtJurassic {
+    animation: txtJurassic 5s infinite;
 }

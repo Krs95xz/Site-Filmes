@@ -7,80 +7,87 @@ body {
     animation: titulo 2s;
     font-family: Montserrat;
 }
-table {
-    margin: 60px auto;
-}
-th {
-    border: 2px solid gray;
-}
-p {
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1px;
-}
-.Filme {
-    width: 100px;
-    height: 150px;
-    border-radius: 8px;
-}
-.Filme:hover {
-    transform: scale(1.35);
-    transition: 0.5s;
-}
 #logo {
     width: 100px;
 }
-td {
-    padding: 30px;
+header {
+    display: grid;
+    border: 3px solid rgb(141, 203, 206);
+    grid-template-columns: 1fr 10fr 4fr;
 }
 h1 {
-    color: red;
-}
-#conteudo {
-    display: flex;
-    flex: 1;
-    padding: 20px;
+    color: white;
+    padding-top: 9px;
 }
 aside {
-    background-color: rgb(58, 58, 58);
-    padding: 10px;
-    margin-left: -20px;
-    width: 120px;
-    border-radius: 10px;
-    border: 2px solid red;
-    height: 650px;
-}
-section {
-    margin-left: -60px;
-    width: 120px;
-    background-color: white;
-    border-radius: 10px;
-}
-a {
-    color: black;
-}
-#conta {
-    margin-top: 4px;
-}
-.opcoes:hover {
-    transform: scale(1.25);
-    width: 150px;
-    transition: 1s;
-    margin-left: 20px;
-    border: 1px solid black;
-}
-header {
-    display: flex;
-    border: 3px solid rgb(112, 112, 112);
-}
-#tituloSite{
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 footer {
-    width: 98%;
+    width: 98.3%;
     text-align: center;
+    top: 100%;
     bottom: 0;
+    border: 3px solid rgb(141, 203, 206);
+    padding: 10px;
+}
+p {
+    font-size: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+header > aside > a {
+    margin-top: 20px;
+    font-size: 13px;
+    height: 60%;
+    border-radius: 20px;
+}
+header > aside > a:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(141, 203, 206);
+    transition: 1s;
+}
+.Filme {
+    margin-left: 10%;
+    width: 80%;
+    height: 190px;
+    border-radius: 8px;
+}
+.Filme:hover {
+    transform: scale(1.12);
+    transition: 0.3s;
+}
+#maisVistos, #recomendados {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+#conteudo {
+    max-width: 60%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.categoria {
+    color: black;
+    border: 2px solid white;
+    background-color: rgb(141, 203, 206);
+    border-radius: 0px 0px 20px 3px;
+    height: 12%;
+    width: 30%;
+}
+.categoria > h3 {
+    margin: 3px auto;
+}
+#conteudo > #lista > section > h3 {
+    margin-left: 5px;
 }
 @keyframes titulo {
     from {
