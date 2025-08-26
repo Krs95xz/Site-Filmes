@@ -47,11 +47,24 @@ h1 {
     color: white;
     padding-top: 9px;
 }
+button {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: rgb(47, 169, 255);
+}
 #planos > .caixas > h2, h4 {
     text-align: center;
 }
 #planos > .caixas > h2, li, h4 {
     color: black;
+}
+#separador {
+    padding: 40px;
 }
 /*Premium*/
 #prP1 {
@@ -64,20 +77,20 @@ h1 {
     color: rgb(1, 93, 253);
 }
 #prP4 {
-    color: rgb(1, 135, 253);
+    color: rgb(30, 165, 255);
 }
 /*Avançado*/
 #prA1 {
     color: rgb(0, 0, 0);
 }
 #prA2 {
-    color: rgb(106, 106, 106);
+    color: rgb(37, 116, 123);
 }
 #prA3 {
     color: rgb(0, 0, 0);
 }
 #prA4 {
-    color: rgb(87, 87, 87);
+    color: rgb(37, 116, 123);
 }
 #planos {
     display: grid;
@@ -86,7 +99,7 @@ h1 {
     height: 350px;
     width: 80%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 10px;
     padding-top: 75px;
     padding-bottom: 75px;
 }
@@ -100,13 +113,13 @@ h1 {
     background: linear-gradient(rgb(141, 203, 206), rgb(84, 119, 121));
 }
 .caixas:nth-child(2) {
-    animation-delay: 2.5s;
+    animation-delay: 2s;
     animation-fill-mode: both;
     transform: scale(1.2);
     background: linear-gradient(rgb(141, 203, 206), rgb(47, 169, 255));
 }
 .caixas:nth-child(3) {
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     animation-fill-mode: both;
     background: linear-gradient(rgb(141, 203, 206), rgb(255, 255, 255));
 }

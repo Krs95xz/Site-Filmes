@@ -2,7 +2,21 @@ body {
     padding: 0;
     top: 0;
     margin: 0;
-    font-family: Montserrat;
+    font-family: Montserrat, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+}
+section > div:nth-child(1) {
+    margin-left: 7%;
+    width: 100%;
+}
+section > div:nth-child(2) {
+    height: 150px;
+    border-radius: 0px 0px 0px 15px;
 }
 button {
     background-color: black;
@@ -12,19 +26,22 @@ button {
     width: 200px;
     text-align: center;
     height: 30px;
-}
-button:hover {
-    transition: 0.5s;
-    transform: scale(1.15);
-}
-#botao {
     left: 0.1%;
     margin: 0.5%;
     margin-left: 1.5%;
     position: absolute;
 }
+button:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+}
 img {
-    width: 50%;
+    width: 60%;
+    border-radius: 15px;
+    padding: 3px;
+}
+video {
+    width: 60%;
     border-radius: 15px;
     padding: 3px;
 }
@@ -34,8 +51,14 @@ div {
 }
 p {
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     text-align: justify;
+    border-radius: 7px;
+    padding: 7px;
+}
+h1 {
+    margin: 0 auto;
+    width: 60%;
     border-radius: 7px;
     padding: 4px;
 }
@@ -70,12 +93,10 @@ p {
 @keyframes PequenoGrandetxt {
     from {
         width: 10%;
-        padding: 1px;
         margin: 0 auto;
     }
     to {
-        width: 50%;
-        padding: 20px;
+        width: 60%;
         margin: 0 auto;
     }
 }
@@ -85,7 +106,7 @@ p {
         padding: 1px;
     }
     to {
-        width: 50%;
+        width: 60%;
         padding: 3px;
     }
 }
@@ -105,11 +126,13 @@ p {
 #div1 {
     animation: Invertido 2s;
 }
-#txtStranger {
+#txtStranger, #avStranger {
     animation: txtStranger 5s infinite;
+    background-color: black;
 }
 #Stranger {
     animation: txtStranger 10s infinite;
+    background-color: black;
 }
 
 /*Round 6*/
@@ -128,21 +151,26 @@ p {
     animation: Aparicao 2s;
 }
 #tituloRound {
+    background-color: black;
     animation: txtRound 10s infinite;
 }
-#txtRound {
+#txtRound, #avRound {
     animation: txtRound 5s infinite;
     background-color: rgb(0, 0, 0);
 }
 
-/*Sob as Águas do Sena*/
+/*Megatubarão*/
 #div3 {
     animation: AparicaoCima 2s;
 }
-#txtAgua {
+#txtMega, #avMega {
+    background-color: black;
+    color: white;
     animation: PequenoGrandetxt 2s;
 }
-#tituloAgua {
+#tituloMega {
+    background-color: black;
+    color: white;
     animation: PequenoGrandetxt 2s;
 }
 #tubarao {
@@ -169,9 +197,11 @@ p {
 }
 #tituloDonzela {
     animation: txtDonzela 10s infinite;
+    background-color: black;
 }
-#txtDonzela {
+#txtDonzela, #avDonzela {
     animation: txtDonzela 5s infinite;
+    background-color: black;
 }
 
 /*Wandinha*/
@@ -180,7 +210,7 @@ p {
         color: rgb(255, 255, 255);
     }
     35% {
-        color: rgb(148, 44, 213);
+        color: rgb(174, 49, 252);
     }
     75% {
         color: rgb(199, 110, 255);
@@ -194,20 +224,40 @@ p {
 }
 #tituloWandinha {
     animation: txtWandinha 10s infinite;
+    background-color: black;
 }
-#txtWandinha {
+#txtWandinha, #avWandinha {
     animation: txtWandinha 5s infinite;
+    background-color: black;
 }
 
-/*Adolescência*/
+/*Uncharted*/
+@keyframes txtUncharted {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    35% {
+        color: rgb(253, 245, 129);
+    }
+    75% {
+        color: rgb(252, 240, 82);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
 #div6 {
     animation: Aparicao 2s;
 }
-#tituloAdolescencia {
+#tituloUncharted {
     animation: PequenoGrandetxt 2s;
+    background-color: rgb(0, 0, 0);
+    animation: txtUncharted 10s infinite;
 }
-#txtAdolescencia {
+#txtUncharted, #avUncharted {
     animation: PequenoGrandetxt 2s;
+    background-color: rgb(0, 0, 0);
+    animation: txtUncharted 5s infinite;
 }
 #adolescente {
     animation: PequenoGrandeimg 2s;
@@ -216,7 +266,7 @@ p {
 /*Godzilla Minus One*/
 @keyframes txtGodzilla {
     0% {
-        color: rgb(0, 69, 148);
+        color: rgb(0, 92, 196);
     }
     35% {
         color: rgb(0, 119, 255);
@@ -228,7 +278,7 @@ p {
         color: rgb(200, 226, 255);
     }
     100% {
-        color: rgb(0, 69, 148);
+        color: rgb(0, 92, 196);
     }
 }
 #div7 {
@@ -238,7 +288,7 @@ p {
     animation: PequenoGrandetxt 2s;
     animation: txtGodzilla 15s infinite;
 }
-#txtGodzilla {
+#txtGodzilla, #avGodzilla {
     animation: PequenoGrandetxt 2s;
     animation: txtGodzilla 8s infinite;
 }
@@ -252,7 +302,7 @@ p {
         color: rgb(149, 185, 207);
     }
     50% {
-        color: rgb(44, 73, 92);
+        color: rgb(57, 99, 126);
     }
     100% {
         color: rgb(149, 185, 207);
@@ -263,21 +313,23 @@ p {
 }
 #tituloCirculo {
     animation: txtCirculo 10s infinite;
+    background-color: black;
 }
-#txtCirculo {
+#txtCirculo, #avCirculo {
     animation: txtCirculo 5s infinite;
+    background-color: rgb(0, 0, 0);
 }
 
 /*Um Lugar Silencioso*/
 @keyframes txtLugar {
     0% {
-        color: rgba(255, 208, 0, 0.725);
+        color: rgb(255, 208, 0);
     }
     50% {
         color: rgb(255, 255, 255);
     }
     100% {
-        color: rgba(255, 208, 0, 0.725);
+        color: rgb(255, 208, 0);
     }
 }
 #div9 {
@@ -285,21 +337,23 @@ p {
 }
 #tituloLugar {
     animation: txtLugar 10s infinite;
+    background-color: black;
 }
-#txtLugar {
+#txtLugar, #avLugar {
     animation: txtLugar 5s infinite;
+    background-color: black;
 }
 
 /*Jurassic World*/
 @keyframes txtJurassic {
     0% {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     50% {
         color: rgb(34, 119, 255);
     }
     100% {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 }
 #div10 {
@@ -307,7 +361,9 @@ p {
 }
 #tituloJurassic {
     animation: txtJurassic 10s infinite;
+    background-color: black;
 }
-#txtJurassic {
+#txtJurassic, #avJurassic {
     animation: txtJurassic 5s infinite;
+    background-color: black;
 }
