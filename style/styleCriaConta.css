@@ -43,7 +43,7 @@ a {
     background-color: rgb(3, 29, 54);
     border-radius: 50px;
     display: grid;
-    max-width: 80dvw;
+    max-width: 71dvw;
     grid-template-columns: 1fr 1fr;
     margin: 50px auto;
     transition: 0.5s;
