@@ -23,7 +23,7 @@ a {
 }
 header > aside > a {
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 15px;
     height: 60%;
     border-radius: 20px;
 }
@@ -33,7 +33,7 @@ header > aside > a:hover {
     transition: 1s;
 }
 footer {
-    width: 98.3%;
+    width: 98dvw;
     text-align: center;
     top: 100%;
     bottom: 0;
@@ -64,7 +64,7 @@ button {
     color: black;
 }
 #separador {
-    padding: 40px;
+    padding-bottom: 40px;
 }
 /*Premium*/
 #prP1 {
@@ -95,7 +95,7 @@ button {
 #planos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
+    column-gap: 3dvw;
     height: 350px;
     width: 80%;
     margin: 0 auto;

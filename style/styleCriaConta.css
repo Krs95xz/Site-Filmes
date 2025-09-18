@@ -41,17 +41,17 @@ a {
     color: white;
     border: 3px solid rgb(106, 146, 254);
     background-color: rgb(3, 29, 54);
-    border-radius: 10px;
+    border-radius: 50px;
     display: grid;
-    max-width: 80%;
+    max-width: 80dvw;
     grid-template-columns: 1fr 1fr;
     margin: 50px auto;
-    height: 485px;
+    transition: 0.5s;
 }
 #divona > img {
     height: 100%;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 #divDados {
     padding: 7px;
@@ -84,4 +84,12 @@ header > h1 {
     text-align: left;
     padding-top: 10px;
     font-size: 30px;
+}
+@media (max-width: 800px) {
+    #divona > img {
+        display: none;
+    }
+    #divona {
+        display: block;
+    }
 }

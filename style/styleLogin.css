@@ -27,6 +27,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 15px;
     padding-right: 15px;
+    transition: 1s;
 }
 .dados > label {
     text-align: initial;
@@ -55,17 +56,18 @@ a {
     color: white;
     border: 3px solid rgb(106, 146, 254);
     background-color: rgb(3, 29, 54);
-    border-radius: 10px;
+    border-radius: 50px;
     display: grid;
-    max-width: 63%;
+    max-width: 63dvw;
     grid-template-columns: 1fr 1fr;
     margin: 120px auto;
     height: 325px;
+    transition: 0.5s;
 }
 #divona > img {
     height: 100%;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 #divDados {
     padding: 7px;
@@ -102,4 +104,12 @@ header > h1 {
     text-align: left;
     padding-top: 10px;
     font-size: 30px;
+}
+@media (max-width: 800px) {
+    #divona {
+        display: block;
+    }
+    #divona > img {
+        display: none;
+    }
 }

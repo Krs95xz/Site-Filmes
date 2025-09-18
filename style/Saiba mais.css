@@ -2,6 +2,8 @@ body {
     padding: 0;
     top: 0;
     margin: 0;
+    width: 100dvw;
+    height: 100dvh;
     font-family: Montserrat, serif;
     background-repeat: no-repeat;
     background-size: cover;
