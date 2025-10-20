@@ -1,37 +1,23 @@
 body {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 0;
     padding: 0;
     top: 0;
-    font-family: Montserrat;
-    animation: titulo 2.5s;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    animation: titulo 2s;
 }
-html, body {
-    height: 100%;
+#logo {
+    width: 100px;
 }
 header {
     display: grid;
     border: 3px solid rgb(141, 203, 206);
     grid-template-columns: 1fr 10fr 4fr;
-}
-#logo {
-    width: 100px;
-}
-h1 {
     color: white;
-    padding-top: 9px;
-    margin-right: 100%;
-}
-footer {
-    width: 99.7%;
 }
 aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-section {
-    padding: 50px;
 }
 footer {
     width: 98.3%;
@@ -41,47 +27,95 @@ footer {
     border: 3px solid rgb(141, 203, 206);
     padding: 10px;
 }
+a {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
 header > aside > a {
     margin-top: 20px;
     font-size: 15px;
     height: 60%;
     border-radius: 20px;
 }
+header > h1 {
+    margin-top: 30px;
+}
 header > aside > a:hover {
     transform: scale(1.1);
     border: 2px solid rgb(141, 203, 206);
     transition: 1s;
 }
-code {
-    background-color: #eef;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: monospace;
+#CorpoSite {
+    transition: 0.5s;
+    padding: 20px;
+    width: 70dvw;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: rgb(12, 43, 79);
+    border: 3px solid rgb(141, 203, 206);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-ol, li {
+img {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+hr {
+    border: 2px solid white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#logo {
+    width: 100px;
+}
+.divConteudo {
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(141, 203, 206);
+    border-radius: 20px;
+}
+.divConteudo > table,
+.divConteudo > h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+.divConteudo > h1 {
+    margin-bottom: 15px;
+}
+
+table {
+    border-radius: 10px;
+    border: 2px solid black;
     padding: 5px;
 }
-ol {
-    padding-left: 20px;
+tr {
+    background-color: rgb(0, 217, 255);
 }
-main {
-    color: black;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(245, 245, 245, 0.881);
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 15px;
+th:nth-child(1) {
+    background-color: rgb(0, 254, 0);
 }
-a {
+th:nth-child(2) {
+    background-color: rgb(0, 255, 255);
+}
+th:nth-child(3) {
+    background-color: rgb(248, 244, 0);
+}
+th:nth-child(4) {
+    background-color: rgb(255, 0, 0);
+}
+footer {
     color: white;
-    text-decoration: none;
+    width: 98.3%;
     text-align: center;
-}
-#b1:hover {
-    background-color: rgb(95, 95, 255);
-    transition: 0.5s;
-    border: 1px solid black;
+    top: 100%;
+    bottom: 0;
+    border: 3px solid rgb(141, 203, 206);
+    padding: 10px;
 }
 @keyframes titulo {
     from {

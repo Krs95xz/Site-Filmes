@@ -3,64 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre</title>
         <link rel="stylesheet" href="../style/styleSobre.css">
-        <link rel="shortcut icon" href="Imagens/icones/Saiba-mais.ico"
-            type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="shortcut icon" href="../Imagens/icones/logo Filmes.png" type="image/x-icon">
+        <title>Apresentação pessoal</title>
     </head>
     <body>
         <header>
-            <a href="KrsFlix.html"><img id="logo"
-                    src="../Imagens/icones/Logo-sem-fundo.png" alt></a>
+            <img id="logo" src="../Imagens/icones/Logo-sem-fundo.png" alt>
             <h1 id="tituloSite">KRSFLIX</h1>
             <aside>
-                <a id="sobre" class="areas"
-                    href="Planos.html"><h2>Planos</h2></a>
-                <a id="conta" class="areas" href="../index.html"><h2>Tela
-                        login</h2></a>
-                <a id="conta" class="areas"
-                    href="KrsFlix.html"><h2>Filmes</h2></a>
+                <a id="sobre" href="KrsFlix.html"><h2>Filmes</h2></a>
+                <a id="conta" href="../index.html"><h2>Tela login</h2></a>
+                <a id="conta" href="Planos.html"><h2>Planos</h2></a>
             </aside>
         </header>
-        <section>
-            <main>
-                <h3>Quem sou eu?</h3>
-                <p>Meu nome é Kauã, sou aluno da Escola Germinare TECH do
-                    Instituto
-                    J&F, Estou no 1ºano do ensino médio quando fiz este
-                    site.</p>
-                <br>
-                <h3>Sobre o que eu sei</h3>
-                <ol>
-                    <li>No começo do HTML, antes mesmo de começar as aulas de
-                        Desenvolvimento, só sabia <code>h1</code> <code>p</code>
-                        <code>img</code> <code>div</code> <code>br</code>
-                        <code>input</code> <code>button</code>.</li>
-                    <li>Depois de alguns meses eu aprendi muito mais tags no
-                        HTML
-                        como:<br> <code>ol/ul</code> <code>li</code>
-                        <code>a</code>
-                        <code>section</code> <code>article</code>
-                        <code>span</code>
-                        <code>code</code> <code>header</code>
-                        <code>footer</code>
-                        <code>main</code> <code>aside</code> <code>nav</code>
-                        <code>table/th/tr/td</code> entre outros.</li>
-                    <li>Aprendi propriedades no CSS como: <br><code>display:
-                            flex/inline/block</code> <code>padding</code>
-                        <code>margin</code> <code>font-family</code>
-                        <code>bottom</code> <code>position</code>
-                        <code>box-shadow/border/border-radius</code>
-                        <code>transition</code></li>
-                    <li>Descubri com meu amigo, que existem maneiras de criar
-                        animação sem JavaScript, usando <code>@keyframes
-                            "nome"</code> e colocar <code>animation</code> na
-                        tag
-                        desejada com o tempo desejado.</li>
+        <div id="CorpoSite">
+            <div id="sobreMim" class="divConteudo">
+                <h1>Sobre mim</h1>
+                <img src="../Imagens/sobre-mim/minha foto.jpg" alt="Erro de geração de imagem" width="45%">
+                <p>Olá meu nome é <strong>Kauã Ribeiro
+                        Sales</strong>, tenho 16 anos, sou aluno da escola
+                    Germinare Tech, gosto jogar jogos de videogame, desenhar
+                    desenhos de pixel art, assistir vídeos no YouTube. Não gosto
+                    de futebol.</p>
+            </div>
+            <hr>
+            <div id="curiosidades" class="divConteudo">
+                <h1>Minhas curiosidades</h1>
+                <img src="../Imagens/sobre-mim/modelo 3d.jpg" alt="Erro de geração de imagem" width="70%">
+                <ul type="square">
+                    <li>Mexo com impressora 3D e um pouco de modelagem 3D no
+                        Blender.</li>
+                    <li>Sei um pouco de <i>JavaScript</i>.</li>
+                    <li>Sei um pouco de linguagem de programação que custumam
+                        utilizar em jogos como <code>C#</code> e <code>GameMaker
+                            Language (GML).</code></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="divConteudo">
+                <h1>Lugares que já visitei</h1>
+                <ol type="I">
+                    <li>Visitei a av. Paulista</li>
+                    <li>Visitei a cidade de Santos</li>
+                    <li>Visitei a cidade da Praia Grande</li>
                 </ol>
-            </main>
-        </section>
-        <footer>&copy; Todos os direitos reservados ao site KrsFlix (de Krs95xz)
-            &copy;</footer>
+            </div>
+            <hr>
+            <div class="divConteudo">
+                <h1>Matérias Tech favoritas</h1>
+                <table>
+                    <tr>
+                        <th>S (adoro)</th>
+                        <th>A (sou fã)</th>
+                        <th>B (mais o menos)</th>
+                        <th>C (Não gosto)</th>
+                    </tr>
+                    <tr>
+                        <td>DS1</td>
+                        <td>UX</td>
+                        <td>IA</td>
+                    </tr>
+                    <tr>
+                        <td>SOP</td>
+                        <td>POO</td>
+                    </tr>
+                    <tr>
+                        <td>LPR</td>
+                    </tr>
+                    <tr>
+                        <td>BD1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>&copy;Todos os Direitos reservados a KrsFlix&copy;</footer>
     </body>
 </html>

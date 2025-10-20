@@ -4,7 +4,7 @@ body {
     margin: 0;
     text-align: center;
     background: linear-gradient(rgb(7, 121, 188), rgb(22, 63, 166) 100%);
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 html {
     height: 100%;
