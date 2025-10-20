@@ -24,7 +24,6 @@ aside {
     grid-template-columns: repeat(3, 1fr);
 }
 footer {
-    width: 98.3%;
     text-align: center;
     top: 100%;
     bottom: 0;
@@ -77,15 +76,16 @@ header > aside > a:hover {
     margin: 0 auto;
 }
 .categoria {
-    color: black;
+    color: white;
     border: 2px solid white;
-    background-color: rgb(141, 203, 206);
+    background-color: rgb(3, 29, 54);
     border-radius: 0px 0px 20px 3px;
     height: 12%;
     width: 30%;
 }
 .categoria > h3 {
     margin: 3px auto;
+    margin-left: 7px;
 }
 #conteudo > #lista > section > h3 {
     margin-left: 5px;

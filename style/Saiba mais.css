@@ -34,8 +34,10 @@ button {
     position: absolute;
 }
 button:hover {
+    color: black;
+    background-color: white;
     transition: 0.5s;
-    transform: scale(1.15);
+    transform: scale(1.10);
 }
 img {
     width: 60%;
