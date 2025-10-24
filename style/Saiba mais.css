@@ -25,7 +25,7 @@ button {
     color: white;
     border-radius: 10px;
     border: 2px solid red;
-    width: 200px;
+    width: 17dvw;
     text-align: center;
     height: 30px;
     left: 0.1%;
@@ -262,9 +262,6 @@ h1 {
     animation: PequenoGrandetxt 2s;
     background-color: rgb(0, 0, 0);
     animation: txtUncharted 5s infinite;
-}
-#adolescente {
-    animation: PequenoGrandeimg 2s;
 }
 
 /*Godzilla Minus One*/

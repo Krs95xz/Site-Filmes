@@ -18,6 +18,8 @@ header {
 aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-right: 10px;
 }
 footer {
     width: 98.3%;

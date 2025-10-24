@@ -15,6 +15,8 @@ header {
 aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-right: 10px;
 }
 a {
     text-align: center;
@@ -33,12 +35,10 @@ header > aside > a:hover {
     transition: 1s;
 }
 footer {
-    width: 98dvw;
     text-align: center;
-    top: 100%;
-    bottom: 0;
     border: 3px solid rgb(141, 203, 206);
     padding: 10px;
+    margin-top: 50px;
 }
 #logo {
     width: 100px;
@@ -60,16 +60,14 @@ button {
 button:hover {
     color: black;
     background: white;
-    transition: 1s;
+    transform: scale(1.1);
+    transition: 0.7s;
 }
 #planos > .caixas > h2, h4 {
     text-align: center;
 }
 #planos > .caixas > h2, li, h4 {
     color: black;
-}
-#separador {
-    padding-bottom: 40px;
 }
 /*Premium*/
 #prP1 {
@@ -100,18 +98,22 @@ button:hover {
 #planos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3dvw;
+    gap: 3.5dvw;
     height: 350px;
     width: 80%;
     margin: 0 auto;
     padding: 10px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    transition: 0.7s;
+    align-items: center;
 }
 .caixas {
     background-color: rgb(141, 203, 206);
     border-radius: 30px;
     animation: desaparecer 4s;
+    transition: 0.7s;
+    height: 300px;
 }
 .caixas:nth-child(1) {
     animation-fill-mode: both;
@@ -128,6 +130,28 @@ button:hover {
     animation-fill-mode: both;
     background: linear-gradient(rgb(141, 203, 206), rgb(255, 255, 255));
 }
+
+@media (max-width: 850px) {
+    #planos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        gap: 30px;
+        height: 100%;
+        transition: 0.7s;
+    }
+    .caixas {
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 15px;
+        transition: 0.7s;
+        height: 100%;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
+
 @keyframes titulo {
     from {
         margin-top: -100px;
