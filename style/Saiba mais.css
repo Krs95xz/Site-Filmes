@@ -127,7 +127,7 @@ h1 {
         color: red;
     }
 }
-#div1 {
+#section1 {
     animation: Invertido 2s;
 }
 #txtStranger, #avStranger {
@@ -151,7 +151,7 @@ h1 {
         color: rgb(36, 216, 150);
     }
 }
-#div2 {
+#section2 {
     animation: Aparicao 2s;
 }
 #tituloRound {
@@ -164,7 +164,7 @@ h1 {
 }
 
 /*Megatubarão*/
-#div3 {
+#section3 {
     animation: AparicaoCima 2s;
 }
 #txtMega, #avMega {
@@ -196,7 +196,7 @@ h1 {
         color: rgb(255, 255, 255);
     }
 }
-#div4 {
+#section4 {
     animation: Aparicao 2s;
 }
 #tituloDonzela {
@@ -223,7 +223,7 @@ h1 {
         color: rgb(255, 255, 255);
     }
 }
-#div5 {
+#section5 {
     animation: Invertido 2s;
 }
 #tituloWandinha {
@@ -250,7 +250,7 @@ h1 {
         color: rgb(255, 255, 255);
     }
 }
-#div6 {
+#section6 {
     animation: Aparicao 2s;
 }
 #tituloUncharted {
@@ -282,7 +282,7 @@ h1 {
         color: rgb(0, 92, 196);
     }
 }
-#div7 {
+#section7 {
     animation: AparicaoCima 2s;
 }
 #tituloGodzilla {
@@ -309,7 +309,7 @@ h1 {
         color: rgb(149, 185, 207);
     }
 }
-#div8 {
+#section8 {
     animation: Aparicao 2s;
 }
 #tituloCirculo {
@@ -333,7 +333,7 @@ h1 {
         color: rgb(255, 208, 0);
     }
 }
-#div9 {
+#section9 {
     animation: Invertido 2s;
 }
 #tituloLugar {
@@ -357,7 +357,7 @@ h1 {
         color: rgb(255, 255, 255);
     }
 }
-#div10 {
+#section10 {
     animation: AparicaoCima 2s;
 }
 #tituloJurassic {
