@@ -61,8 +61,8 @@ header > section {
     display: grid;
     width: 63dvw;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    margin-top: 8.5cqh;
+    margin: auto;
+    margin-top: 10cqh;
     transition: 0.5s;
 }
 #imgLogin {
